@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Assignment Board</title>
+</head>
+<body>
+    <header>
+        <h1>Assignment Board</h1>
+    </header>
+
+    <main>
+        <section id="postAssignment">
+            <h2>Post Your Assignment</h2>
+            <textarea id="assignmentText" placeholder="Enter your assignment"></textarea>
+            <label for="deadline">Deadline:</label>
+            <input type="datetime-local" id="deadline">
+            <label for="amount">Amount (in Rs.):</label>
+            <input type="number" id="amount" placeholder="Enter amount">
+            <button onclick="postAssignment()">Post Assignment</button>
+        </section>
+
+        <section id="solveAssignment">
+            <h2>Solve Assignments</h2>
+            <ul id="assignmentList"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
